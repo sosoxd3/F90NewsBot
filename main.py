@@ -57,7 +57,11 @@ def get_image(entry):
     return None
 
 def send_message(title, source, img=None):
-    caption = f"📰 {clean_text(title)}\n📡 المصدر: {clean_text(source)}{FOOTER}"
+    caption = (
+    f"🔴 <b><u>{clean_text(title)}</u></b>\n"
+    f"📡 <i>{clean_text(source)}</i>\n"
+    f"<span style='font-size:12px;color:#777'>{FOOTER}</span>"
+)
     data = {"chat_id": CHAT_ID, "caption": caption, "parse_mode": "HTML"}
     if img:
         data["photo"] = img
