@@ -5,7 +5,7 @@ import re
 from html import unescape
 import os
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "ضع_توكنك_هنا")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8340084044:AAH4xDclN0yKECmpTFcnL5eshA4-qREHw4w")
 CHAT_ID = os.getenv("CHAT_ID", "@f90newsnow")
 
 # المصادر العربية
